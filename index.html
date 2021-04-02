@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hiro11-Portfolio</title>
+    <!--Import icon css เพื่อใช้งานในเวบ-->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!--กำหนดเมนูแบบ Hamburger เพื่อใช้งานบนหน้าจออุปกรณ์เคลื่อนที่ต่างๆ-->    
+<div class="hamburger-menu">
+    <i class="ion-md-list open"></i>
+    <i class="ion-md-close close"></i>
+</div> 
+
+<nav class="nav">
+    <div class="intro">
+        <img class="hiro-logo" src="./images/avatar.png" alt="">
+        <h1 class="intro-heading">Paisan Pompadech</h1>
+        <h2 class="intro-subhead">IT Support/Programer</h2>
+    </div>
+
+    <ul class="nav-list">
+        <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+        </li>
+        <li class="nav-item">
+            <a href="#experience" class="nav-link">Experience</a>
+        </li>
+        <li class="nav-item">
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+        </li>
+        <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+        </li>
+    </ul>
+
+    <div class="social-media-wrapper">
+        <span>Follow me on</span>
+        <div class="social-media">
+            <a href="#" class="sm-link"><i class="icon ion-logo-twitter"></i></a>
+            <a href="#" class="sm-link"><i class="icon ion-logo-github"></i></a>
+            <a href="#" class="sm-link"><i class="icon ion-logo-facebook"></i></a>
+        </div>
+    </div>
+    
+    <div class="copyright-notice">
+        <p>เวบไซต์เพื่อส่งการบ้าน HTML/CSS</p>
+        <p>Coding The Future รุ่นที่ 2</p>
+    </div>
+</nav>
+
+<main class="main">
+    <section class="about-me" id="about">
+        <div class="hiro"></div>
+        <div class="container">
+            <div class="heading-group">
+                <span class="section-head-small">About</span>
+                <h5 class="section-head-large">ประวัติส่วนตัว</h5>
+            </div>
+            <div class="about-me-intro">
+                <div class="intro-description">
+                    <p>
+                        <span>สวัสดีครับ ผมชื่อนายไพศาล ป้อมภาเดช</span> แซวดยุคเฟอร์นิเจอร์ กัมมันตะธุหร่ำซะหลวงปู่ เพทนาการซากุระ ม้าหินอ่อน ดราม่าวโรกาสเด้อไฮเอนด์ อัลบั้มติ๋มวิน บลูเบอร์รีฟรุตพาร์ตเนอร์เทรลเลอร์ โหงวเฮ้งความหมาย กัมมันตะซามูไรช็อต เกรด มหาอุปราชา โมหจริตซาบะแฟล็ต ธรรมาภิบาล วืดโต๋เต๋ เลดี้ เปราะบางเอสเพรสโซ
+                    </p>
+                    <p>
+                        <span>ชีวิตส่วนตัวและไลฟ์สไตล์</span> แฮมเบอร์เกอร์ มหาอุปราชาออดิชั่นเช็กสายสัมพันธ์ อยุติธรรมนู้ดทั้งสิ้นสงบเสงี่ยมเภทภัย รถลากอดทน นาวิกโยธินไข่เยี่ยวม้า ตุ๋ยชอบกลสหัชญาณขบขัน ต่อยอด ตัวเองช็อคโกรธเกรี้ยวแยมโรล รูปพรหมราสเบอร์รีแนบเนียน ตัวเก็งเส้นตรงอาการนามเจ้านายดักฟัง ทศนิยม หัสดนตรี วิทย์พุดดิ้งพาร์ตเนอร์ออร์แกนิคกรีดกราย ติ๋ม ทักษิณานุประทานแสนกลตัดเชือกเบอร์รี แผนภาพสจ๊วตสกรัม
+                    </p>
+                </div>
+                <div class="call-to-action">
+                    <p> สนใจร่วมงานหรือมีตำแหน่งงานว่างที่ตรงกับคุณสมบัติ</p>
+                    <p> กรุณาติดต่อทักทายเข้ามาพูดคุยกันได้</p>
+                    <a href="contact" class="btn cta-btn">สนใจร่วมงาน</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="my-expertise" id="skills">
+        <div class="container">
+            <div class="heading-group">
+                <span class="section-head-small">What I do</span>
+                <h5 class="section-head-large">ความถนัดและเชี่ยวชาญ</h5>
+            </div>
+
+            <div class="grid">
+                <div class="grid-item orange">
+                    <span class="item-icon">
+                        <i class="ion-md-build"></i>
+                    </span>
+                    <h3 class="item-heading">IT Support</h3>
+                </div>
+
+                <div class="grid-item blue">
+                    <span class="item-icon">
+                        <i class="icon ion-md-code"></i>
+                    </span>
+                    <h3 class="item-heading">Programmer</h3>
+                </div>
+
+                <div class="grid-item green">
+                    <span class="item-icon">
+                        <i class="ion-md-image"></i>
+                    </span>
+                    <h3 class="item-heading">Graphic Design</h3>
+                </div>
+
+                <div class="grid-item yellow">
+                    <span class="item-icon">
+                        <i class="ion-md-wifi"></i>
+                    </span>
+                    <h3 class="item-heading">Network Administrator</h3>
+                </div>
+                
+                <div class="grid-item dark">
+                    <span class="item-icon">
+                        <i class="icon ion-logo-buffer"></i>
+                    </span>
+                    <h3 class="item-heading">Database administrator</h3>
+                </div>
+            </div>
+
+            <div class="heading-group margin-top">
+                <span class="section-head-small">What I use</span>
+                <h5 class="section-head-large">โปรแกรมและเครื่องมือที่ใช้</h5>
+            </div>
+
+            <div class="grid">
+                <div class="grid-item red">
+                    <div class="item-skills">
+                        <h5 class="skills-name">JAVA</h5>
+                    </div>
+                    <p class="skills-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatem officia recusandae, laboriosam eaque ut distinctio velit reiciendis, cum, aut asperiores soluta eum rem voluptates illum.</p>
+                </div>    
+                <div class="grid-item blue">
+                    <div class="item-skills">
+                        <h5 class="skills-name">SQL</h5>
+                    </div>
+                    <p class="skills-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatem officia recusandae, laboriosam eaque ut distinctio velit reiciendis, cum, aut asperiores soluta eum rem voluptates illum.</p>
+                </div>
+                <div class="grid-item orange">
+                    <div class="item-skills">
+                        <h5 class="skills-name">Illustrator</h5>
+                    </div>
+                    <p class="skills-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatem officia recusandae, laboriosam eaque ut distinctio velit reiciendis, cum, aut asperiores soluta eum rem voluptates illum.</p>
+                </div>
+                <div class="grid-item purple">
+                    <div class="item-skills">
+                        <h5 class="skills-name">Premiere Pro</h5>
+                    </div>
+                    <p class="skills-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatem officia recusandae, laboriosam eaque ut distinctio velit reiciendis, cum, aut asperiores soluta eum rem voluptates illum.</p>
+                </div>
+                <div class="grid-item dark-blue">
+                    <div class="item-skills">
+                        <h5 class="skills-name">Photoshop</h5>
+                    </div>
+                    <p class="skills-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatem officia recusandae, laboriosam eaque ut distinctio velit reiciendis, cum, aut asperiores soluta eum rem voluptates illum.</p>
+                </div>
+                <div class="grid-item yellow">
+                    <div class="item-skills">
+                        <h5 class="skills-name">Power BI</h5>
+                    </div>
+                    <p class="skills-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatem officia recusandae, laboriosam eaque ut distinctio velit reiciendis, cum, aut asperiores soluta eum rem voluptates illum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="motto">
+        <div class="container">
+            <div class="quote-wrapper">
+                <blockquote class="quote">Do not be afraid of going slowly, be afraid only of standing still.</blockquote>
+                <cite class="quote-by">~ Chinese Proverb</cite>
+            </div>
+        </div>
+    </section>
+
+    <section class="work-experience" id="experience">
+        <div class="container">
+            <div class="heading-group">
+                <span class="section-head-small">Previous employment</span>
+                <h5 class="section-head-large">ประวัติการทำงาน</h5>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-heading">
+                        <h3 class="timeline-entry-name"><b>IT support  บริษัท A</b></h3>
+                        <span>2020 - ปัจจุบัน</span>
+                    </div>
+                    <p>มหาสารคามเอ็มโพเรียม สัตหีบอรรธนิศาอโยธยา เสื่อมสูญ คลาดเคลื่อนกรรมกร ปทุมธานีสนนราคา เมืองขึ้นหมากสงอุโบสถกรรมทูลกระหม่อม นครศรีธรรมราช อุ้มสมให้ท้ายนมแมวอรรธนิศาอุตรดิตถ์ เปรี้ยวปากสงขลาแสนกลสละสลวย ยะลาพวงมาลา ราชปะแตน แบบแปลนละทิ้งตบตาบางปะกงปัตตานี             
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-heading">
+                        <h3 class="timeline-entry-name"><b>Web Developer บริษัท B</b></h3>
+                        <span>2015 - 2020</span>
+                    </div>
+                    <p>พิกเซลแคร็กฮาร์ดแวร์เคอร์เซอร์ อีเมลไวแมกซ์นครสวรรค์ กาฬสินธุ์ ประจวบคีรีขันธ์สตูลเอาท์พุตซัพพอร์ต พารากอนเดเบียนสุราษฎร์ธานี โทรจัน คีย์ไวแมกซ์สเปซเอาต์พุต ไอพอด คอมไพล์พาสเวิร์ดแฮกเกอร์ สปายแวร์มหาสารคาม แฟล็กมัลติเพล็กซ์เครือข่ายอ่างขาง                    
+                    </p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-heading">
+                        <h3 class="timeline-entry-name"><b>Graphic desing บริษัท C</b></h3>
+                        <span>2012 - 2015</span>
+                    </div>
+                    <p>เอทิลีนช็อปปิ้งร็อคเกจิ ฟลอร์เวิร์ลด์ไคโตซานโพลีเอทิลีนลิมูซีน ไลท์คีตกวีหมิง ซิริอุสฟลุคสคริปต์ซาบะ อะลูมินาแจ็กเก็ตว้าว แคโรทีนฟีดสโตร์ ยีสต์ ซ้อโมเดิร์นแมกกาซีนโปรโมเตอร์บูติค ฮาลาลพอลิเมอร์ เดอะควอนตัมมาร์ค ออสซี่ ฟอยล์ชะโนด ปัจเจกชนเวกเตอร์ฟอร์มบลูเบอร์รี ไคลแม็กซ์ บอดี้คลาสสิก อะซีโตนบอดี้อยุติธรรมโครมาโทกราฟี                 
+                    </p>
+                </div>
+            </div>            
+        </div>
+    </section>
+
+    <section class="my-portfolio" id="portfolio">
+        <div class="container">
+            <div class="heading-group">
+                <span class="section-head-small">ประสบการณ์และการฝึกอบรม</span>
+                <h5 class="section-head-large">Certificate</h5>
+            </div>
+            <div class="grid">
+                <div class="grid-item">
+                    <p>- Java Programming & Sql Developer </p>
+                    <p>- Postgres Sql </p>
+                    <p>- Network Administrator  </p>
+                    <p>- Support Application For Hospital  </p>
+                    <p>- Certificate - Graphic Design & Multimedia Editor </p>
+                    <p>- Certificate - Windows Server 2019 System Administrator </p>
+                    <p>- Certificate - Cisco Network Administrator </p>
+                    <p>- Certificate - VMware vSphere ESXi 6.7 </p>
+                    <p>- Certificate - Digital Transformation </p>
+                    <p>- Certificate - Google Data Studio </p>
+                    <p>- Certificate - Data Analytics for Upskilling </p>
+                    <p>- Chat bot designer (Basic)  </p>
+                    <p>- DataCamp Certificate Introduction to SQL </p>
+                    <p>- DataCamp Certificate Joining Data in SQL </p>
+                    <p>- DataCamp Certificate Intermediate SQL </p>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="heading-group">
+                <span class="section-head-small">Contact me</span>
+                <h5 class="section-head-large">ติดต่อเพื่อร่วมงานหรือว่าจ้าง</h5>
+            </div>
+
+            <div class="contact-info-wrapper">
+                <div class="contact-info">
+                    
+                    <div class="contact-info-item">
+                        <div class="info-item-icon">
+                            <i class="icon ion-md-pin"></i>
+                        </div>
+                        <div class="data-wrapper">
+                            <span class="info-item-data">35/35 Sukumwit.Rd</span>
+                            <span class="info-item-data">Sriracha, Cholburi 12345</span>
+                            <span class="info-item-data">Thailand</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="info-item-icon">
+                            <i class="icon ion-md-call"></i>
+                        </div>
+                        <div class="data-wrapper">
+                            <span class="info-item-data">02-12345678</span>
+                        </div>
+                    </div>
+
+                </div>
+                <!--สร้าง Form เพื่อกรอกข้อความต้องการติดต่อ พร้อมบังคับไม่ให้เว้นค่าว่าง-->
+                <form action="" class="contact-form">
+                    <input type="text" class="input" placeholder="Full name" required>
+                    <input type="text" class="input" placeholder="Email address" required>
+                    <input type="text" class="input" placeholder="Subject" required>
+                    <textarea rows="7" placeholder="Message" required></textarea>
+                    <button class="btn btn-blue" type="submit">กดส่งข้อความ</button>
+                </form>               
+            </div>
+        </div>    
+    </section>
+    
+</main>
+<!--Link JS-->
+<script src="main.js"></script>
+</body>
+</html>
