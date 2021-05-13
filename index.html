@@ -307,13 +307,13 @@
 
                 </div>
                 <!--สร้าง Form เพื่อกรอกข้อความต้องการติดต่อ พร้อมบังคับไม่ให้เว้นค่าว่าง-->
-                <form action="" class="contact-form">
-                    <input type="text" class="input" id="name" placeholder="ใส่ชื่อผู้ติดต่อ" required>
-                    <input type="text" class="input" id="fromName" placeholder="Email ติดต่อกลับ" required>
-                    <textarea rows="7" id="message" placeholder="รายละเอียด" required></textarea>
-                    <button class="btn btn-blue" type="submit" onclick="sendEmail()">กดส่งข้อความ</button>
-                </form>
-                               
+                <form action="javascript:sendmail()" method="post" class="contact-form">
+                    <input type="text" class="input" id="names" placeholder="Full name" required>
+                    <input type="text" class="input" id="emails" placeholder="Email address" required>
+                    <input type="text" class="input" id="subs" placeholder="Subject" required>
+                    <textarea rows="7" id="msgs" placeholder="Message" required></textarea>
+                    <button class="btn btn-blue" type="submit">กดส่งข้อความ</button>
+                </form>                               
             </div>
         </div>    
     </section>
@@ -321,11 +321,53 @@
 </main>
 <!--Link JS-->
 <script src="main.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-<script type="text/javascript">
-(function() {
-emailjs.init("user_laIH9w1QwLWmqnzo6GGbG");
-})();
-</script>
 </body>
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+ 
+<script>  
+
+     function sendmail(){
+    
+			var name = $('#names').val();
+			var email = $('#emails').val();
+			var subject = $('#subs').val();
+            var message = $('#msgs').val();
+
+			// var body = $('#body').val();
+
+			var Body='Name: '+name+'<br>Email: '+email+'<br>Subject: '+subject+'<br>Message: '+message;
+			//console.log(name, phone, email, message);
+
+			Email.send({
+                SecureToken:"fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
+				To: 'hiromiuki11@gmail.com',
+				From: "portgithub@gmail.com",
+				Subject: "New message on contact from "+name,
+				Body: Body
+			}).then(message =>{
+					//console.log (message);
+					if(message=='OK'){
+					alert('Your mail has been send. Thank you for connecting.');
+                    document.getElementById('names').value = '';
+                    document.getElementById('emails').value = '';
+                    document.getElementById('subs').value = '';
+                    document.getElementById('msgs').value = '';
+                    window.location.href = "index.html";
+					}
+					else{
+					console.error (message);
+					alert('There is error at sending message. ');
+                    document.getElementById('names').value = '';
+                    document.getElementById('emails').value = '';
+                    document.getElementById('subs').value = '';
+                    document.getElementById('msgs').value = '';						
+					}
+				}
+			);
+		}
+    </script>
 </html>
