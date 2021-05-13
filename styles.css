@@ -19,7 +19,7 @@
     --orange-color: #ff9102e0;
     --red-color: #ff0a02ec;
     --blue-color: #2c98f0;
-    --yellow-color: #f1ee04;
+    --yellow-color: #b6b30f;
     --purple-color: #a84cb8;
     --dark-blue-color: #4054b2;
     --green-color: #1be61b;
@@ -310,6 +310,14 @@ section:not(.hiro){
 
 .blue{
     color: var(--blue-color);
+}
+
+.purple{
+    color: var(--purple-color);
+}
+
+.dark-blue{
+    color: var(--dark-blue-color);
 }
 
 .yellow{
